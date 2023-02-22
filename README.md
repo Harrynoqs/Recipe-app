@@ -1,46 +1,71 @@
+<!--
+HOW TO USE:
+This is an example of how you may give instructions on setting up your project locally.
+
+Modify this file to match your project and remove sections that don't apply.
+
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
+
+After you're finished please remove all the comments and instructions!
+-->
+
+<!-- <div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <!-- <img src="https://user-images.githubusercontent.com/86473715/208989298-61c26953-a6ea-4543-9250-465e28dd057a.png" alt="logo" width="140"  height="auto" />
+  <br/> -->
+
+<!-- TABLE OF CONTENTS -->
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  <!-- - [🚀 Live Demo](#live-demo) -->
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  <!-- - [Deployment](#triangular_flag_on_post-deployment) -->
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
-<!-- - [🔭 Future Features](#future-features) -->
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-<!-- - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq) -->
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 Recipe App <a name="about-project"></a>
-
-The Blog app will be a classic example of a blog website. You will create a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
+ **Recipe-App** is a web app that keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.
+<a name="readme-top"></a>
 
 ## 🛠 Built With <a name="built-with"></a>
+- Ruby on Rails
 
 ### Tech Stack <a name="tech-stack"></a>
-
-<!-- <details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details> -->
+- Ruby
+- Ruby on Rails
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://rubyonrails.org/">Rails</a></li>
+    <li><a href="https://Ruby on rails.com/">Ruby on Rails</a></li>
   </ul>
 </details>
 
@@ -52,115 +77,90 @@ The Blog app will be a classic example of a blog website. You will create a full
 </details>
 
 <!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
-- **Create a Post**
-- **Add a Comment to a Post**
-- **Like a Post**
+- **allow you to save ingredients**
+- **generate a shopping list**
+- **create recipes**
+- **keep track of what you have**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
-<!--
 ## 🚀 Live Demo <a name="live-demo"></a>
+Not Available yet!
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-- Ruby should be installed.
-- You need a Terminal.
-
-Then run the command example bellow to install rails.-
-
-```sh
- gem install rails
-```
-
+- You should be having [Ruby](https://ruby-lang.org/en/) installed on your computer
 ### Setup
 
-Clone this repository to your desired folder:
+To get a local copy up and running follow these simple example steps.
 
+1. Navigate to a folder where you want the cloned file to appear
 
-Example commands:
-
+2. Clone this repo in your terminal or git bash using the command
 ```sh
-  cd my-folder
-  git clone git@github.com:Harrynoqs/Recipe-app.git
+  cd Blog
+  git clone https://github.com/Harrynoqs/Recipe-app.git
 ```
 
-### Install
+3. run the following command to install all the necessary dependencies including the linters
 
-Install this project with:
+ ```sh
+  cd Recipe-app
+  gem install
+``` 
 
-
-Example command:
-
-```sh
-  cd rails-blog-app/
-  bundle install
-```
-
+4. Navigate to the folder called Blog/ and open this project using your editor
 ### Usage
 
 To run the project, execute the following command:
 
-
-Example command:
-
 ```sh
-  rails server
+  cd Recipe-app
+ rails server
 ```
+- This will start the rails server in your browser
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Run tests
 
 To run tests, run the following command:
 
-Example command:
 
 ```sh
-  gem install rails rspec
-  rails spec spec/models/
+  bin/ rails rsepc sepc/
 ```
-<!--
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+- Heroku
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **Harrison Njuguna**
 
-  - GitHub: [@Harrynoqs](https://github.com/Harrynoqs)
-  - Twitter: [@Harrynoqs](https://twitter.com/noqsnoq1)
-  - LinkedIn: [harrisonw-njuguna](https://linkedin.com/in/harrisonw-njuguna)
+- GitHub: [@Harrynoqs](https://github.com/Harrynoqs)
+- Twitter: [@Harrynoqs](https://twitter.com/noqsnoq1)
+- LinkedIn: [harrisonw-njuguna](https://linkedin.com/in/harrisonw-njuguna)
 
-  👤 **Degisew**
+👤 **Degisew**
 
 - GitHub: [@degisew](https://github.com/degisew)
 - Twitter: [@Dj_etiya](https://twitter.com/DJ_etiya)
@@ -169,16 +169,13 @@ Example:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
-<!--
+
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+- **Implement Front-end UI using react**
+- **Deploy Online**
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
@@ -186,7 +183,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/degisew/Recipe-App/issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -194,42 +191,25 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project, kindly give it a star ⭐️
+If you like this project give a ⭐️ to repo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
-<!--
+
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+I would like to thank the Microverse team.
 
-I would like to thank...
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-<!-- FAQ (optional) -->
-<!--
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
-This project is [MIT](./LICENSE) licensed.
 
+This project is [MIT](https://github.com/Harrynoqs/Recipe-app/blob/dev/LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
