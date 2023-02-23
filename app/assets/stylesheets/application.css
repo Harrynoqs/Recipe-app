@@ -1,15 +1,35 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+th,
+td {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border: 3px solid;
+  margin-bottom: 20px;
+}
+
+#foods {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-food-link {
+  border: 1px solid;
+  border-radius: 5px;
+  height: 40px;
+  background: rgb(127, 125, 255);
+  text-decoration: none;
+}
+
+.delete-food-btn {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: inherit;
+  color: rgba(0, 100, 255);
+  font-weight: bolder;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
