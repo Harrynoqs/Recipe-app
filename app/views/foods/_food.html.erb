@@ -4,6 +4,6 @@
     <td><%= food.name%></td>
     <td><%= food.measurement_unit%></td>
     <td><%= food.price%></td>
-    <td><%= button_to 'Delete', food, method: :delete, class: "delete-food-btn"%></td>
+    <td><%= button_to 'Delete', food, method: :delete, data: { turbo_confirm: "Are you sure?"}, class: "delete-food-btn"%></td>
   </tr>
 </div>

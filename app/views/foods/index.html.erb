@@ -1,6 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <div id="foods">
+<%= link_to "Add New food", new_food_path, class: 'add-food-link'%>
   <table>
     <tr>
       <th scope="col">Food</th>
@@ -12,5 +13,4 @@
       <%= render food %>
     <% end %>
   </table>
-<%= link_to "Add New food", new_food_path, class: 'add-food-link'%>
 </div>
