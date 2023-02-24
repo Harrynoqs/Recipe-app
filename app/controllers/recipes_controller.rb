@@ -1,4 +1,5 @@
 class RecipesController < ApplicationController
+  before_action :authenticate_user!
   # GET /recipes or /recipes.json
   def index
     @recipes = Recipe.includes(:user).where(user_id: current_user).order(created_at: :desc)

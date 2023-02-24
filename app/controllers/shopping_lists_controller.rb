@@ -1,4 +1,5 @@
 class ShoppingListsController < ApplicationController
+  before_action :authenticate_user!
   def index
     @recipe = Recipe.find_by(id: params[:recipe_id])
     @shopping_lists = RecipeFood.includes(:food).all

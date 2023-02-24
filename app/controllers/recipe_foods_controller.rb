@@ -1,4 +1,5 @@
 class RecipeFoodsController < ApplicationController
+  before_action :authenticate_user!
   # GET /recipe_foods or /recipe_foods.json
   def index
     @recipe_foods = RecipeFood.all
