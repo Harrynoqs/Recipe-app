@@ -1,14 +1,15 @@
+
 <div class="login-page-container">
 <div class="login-page">
-<h2>Log in</h2>
+<h2> Welcome to recipe app</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
+  <div class="field mb-3">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
-  <div class="field">
+  <div class="field mb-3">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "current-password" %>
   </div>
@@ -21,7 +22,7 @@
   <% end %>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "Log in", class: "btn btn-dark mt-10 mb-10" %>
   </div>
 <% end %>
 
