@@ -2,11 +2,11 @@ require 'rails_helper'
 
 RSpec.describe Recipe, type: :model do
   subject do
-    User.create(name: 'Amre', email: 'amre@gmail.com', password: 'amre12')
+    User.create(name: 'Harry', email: 'harry@gmail.com', password: 'noqs123')
   end
 
   before(:each) do
-    @recipe = Recipe.new(user_id: subject.id, name: 'Taco', description: 'Mexican delicious spicy food',
+    @recipe = Recipe.new(user_id: subject.id, name: 'pizaa', description: 'italian food',
                          preparation_time: 1, cooking_time: 2, public: false)
   end
 
@@ -19,6 +19,10 @@ RSpec.describe Recipe, type: :model do
       expect(@recipe.name).to be_present
     end
 
+    it 'Recipe should have a valid preparation time' do
+      expect(@recipe.preparation_time).to be >= '1'
+    end
+
     it 'Recipe should have a description' do
       expect(@recipe.description).to be_present
     end
@@ -27,21 +31,22 @@ RSpec.describe Recipe, type: :model do
       expect(@recipe.preparation_time).to be_present
     end
 
-    it 'Recipe should have a valid preparation time' do
-      expect(@recipe.preparation_time).to be >= '1'
-    end
 
     it 'Recipe should have a cooking time' do
       expect(@recipe.cooking_time).to be_present
     end
 
-    it 'Recipe should have a valid cooking time' do
-      expect(@recipe.cooking_time).to be >= '2'
+    it 'Recipe should have a valid preparation time' do
+      expect(@recipe.preparation_time).to be >= '1'
     end
 
     it 'Recipe should have a user id' do
       expect(@recipe.user_id).to be_present
     end
+  end
+
+  it 'Recipe should have a valid cooking time' do
+    expect(@recipe.cooking_time).to be >= '2'
   end
 
   context 'Testing associations' do
