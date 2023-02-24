@@ -31,7 +31,6 @@ RSpec.describe Recipe, type: :model do
       expect(@recipe.preparation_time).to be_present
     end
 
-
     it 'Recipe should have a cooking time' do
       expect(@recipe.cooking_time).to be_present
     end
