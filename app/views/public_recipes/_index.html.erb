@@ -1,18 +1,15 @@
 <div id="<%= dom_id recipe %>">
   <div class="recipe-card">
     <div class="recipe-name-contnr">
-      <%= link_to recipe_url(recipe), class: 'recipe-link' do %>
         <h5>
           <%= recipe.name %>
         </h5>
-      <% end %>
+        <h4>By: <%= recipe.user.name %></h4>
     </div>
-    <%= link_to recipe_url(recipe), class: 'recipe-link' do %>
       <div class="recipe-descrptn-contnr">
         <p>
           <%= recipe.description %>
         </p>
       </div>
-    <% end %>
   </div><br>
 </div>

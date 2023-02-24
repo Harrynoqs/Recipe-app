@@ -12,6 +12,7 @@ table {
 
 #foods,
 #recipes,
+.shopping-list-contnr,
 .add-recipe-form,
 .recipe-detail {
   width: 50%;
@@ -24,11 +25,12 @@ table {
   border: 1px solid;
   border-radius: 5px;
   height: 25px;
-  background: rgb(127, 125, 255);
+  background: rgb(100, 34, 45);
   text-decoration-line: none;
   position: relative;
   float: right;
   bottom: 13px;
+  color: white;
 }
 
 .delete-food-btn,
