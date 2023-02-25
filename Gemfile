@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.3'
 
+gem 'cancancan'
+
 gem 'devise'
 
 gem 'bootstrap', '~> 5.1'
