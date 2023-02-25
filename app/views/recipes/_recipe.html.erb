@@ -2,9 +2,9 @@
   <div class="recipe-card">
   <div class="recipe-name-contnr">
   <%= link_to recipe_url(recipe), class: 'recipe-link' do %>
-    <h3>
+    <h5>
     <%= recipe.name %>
-    </h3>
+    </h5>
 <% end %>
     <%= button_to 'Remove', recipe, method: :delete, data: { turbo_confirm: "Are you sure?"} %>
   </div>

@@ -1,4 +1,5 @@
 class FoodsController < ApplicationController
+  before_action :authenticate_user!
   # GET /foods or /foods.json
   def index
     @foods = Food.all.where(user_id: current_user.id).order(created_at: :desc)

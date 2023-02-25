@@ -33,7 +33,7 @@
 
   <div class="recipe-form-fields">
     <%= form.label :public, style: "display: block" %>
-    <%= form.select :public , %w[true false] %>
+    <%= form.select :public , [["Yes", true], ["No", false] ], selected: true  %>
   </div>
 
   <div class='create-recipe-btn'>
